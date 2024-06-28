@@ -1,0 +1,404 @@
+/* only small desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #hero-area .contents .head-title {
+    font-size: 40px;
+  }
+  .services-item .services-content h3 a {
+    font-size: 14px;
+  }
+  .IamA{
+	text-transform: capitalize;
+	font-size: 10px;
+	text-decoration: none;
+	font-weight: 500;
+	font-style: inherit;
+  }
+}
+
+/* tablets */
+@media (max-width: 991px) {
+	.banner_content h1{
+		font-size: 30px;
+	}
+	.banner_content p {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.banner_content{
+		margin-top: 130px;
+	}
+	.about-content {
+		margin-top: 30px;
+	}
+	.section-title {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	.section-title:after {
+		content: "";
+		position: absolute;
+		padding: 38px;
+	}
+	.services-item {
+		margin-bottom: 30px;
+	}
+	.testimonial .description {
+		text-align: center;
+		padding: 20px 0;
+	}
+	.IamA{
+		text-transform: capitalize;
+		font-size: 30px;
+		text-decoration: none;
+		font-weight: 500;
+		font-style: inherit;
+	  }
+}
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+	.section-title {
+		font-size: 30px;
+		margin-bottom: 70px;
+	}
+	.services-item .services-content h3 a {
+		font-size: 18px;
+	}
+	.services-item {
+		margin-bottom: 30px;
+	}
+	.IamA{
+		text-transform: capitalize;
+		font-size: 20px;
+		text-decoration: none;
+		font-weight: 500;
+		font-style: inherit;
+	  }
+	  
+}
+
+/* mobile or only mobile */
+@media (max-width: 767px) {
+	.navbar-light .navbar-nav .nav-link {
+		color: #333;
+		padding: 0 0 10px;
+	}
+	.funfact {
+		margin-bottom: 30px;
+	}
+	.section-title {
+		margin-bottom: 70px;
+	}
+	.navbar-brand img {
+		margin: 5px 0;
+	}
+	.banner_content h1 {
+		font-size: 60px;
+	}
+	.btn-common {
+		font-size: 12px;
+		padding: 8px 26px;
+	}
+	.blog-image img{
+		width: 100%;
+	}
+	.single_blog {
+		margin-bottom: 30px;
+	}
+	.blog-thumb h4{
+		font-size: 18px;
+	}
+	.contact-form-area {
+		padding: 40px 20px;
+	}
+	.footer-right-area {
+		margin-bottom: 30px;
+	}
+	.IamA{
+		text-transform: capitalize;
+		font-size: 30px;
+		text-decoration: none;
+		font-weight: 500;
+		font-style: inherit;
+	  }
+	  .hero-section-right {
+		position: relative;
+	  }
+	  
+	  .absolute {
+		position: absolute;
+	  }
+	  
+	  .user-image {
+		padding: 2rem;
+		margin-left: 20%;
+		filter: grayscale(0);
+		transition: all 3s;
+		/* animation: ScaleImage 5s linear infinite; */
+	  }
+	  .user-image img {
+		z-index: -9;
+		border-radius: 50% 50% 0 0;
+		/* border-top-right-radius: 30%; */
+		height: 300px;
+		width: 250px;
+		object-fit: cover;
+		border: 2px solid blue;
+		
+	  }
+	  
+	  @keyframes ScaleImage {
+		0% {
+		  filter: grayscale(0);
+		  transform: scale(1);
+		}
+	  
+		50% {
+		  transform: scale(1.2);
+		  filter: grayscale(1);
+		  box-shadow: 3px 3px 10px rgb(8, 118, 221);
+		}
+	  
+		100% {
+		  transform: scale(1);
+		  filter: grayscale(0);
+		}
+	  }
+	  
+	  .icon-dots {
+		z-index: 9;
+		bottom: -1rem;
+		right: 0;
+		animation-name: dotsAnimation;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+	  }
+	  @keyframes dotsAnimation {
+		0% {
+		  transform: translateY(0px);
+		}
+		50% {
+		  transform: translateY(-10px);
+		}
+		100% {
+		  transform: translateY(0px);
+		}
+	  }
+	  
+	  .icon-cube {
+		z-index: 9;
+		top: -0.8em;
+		right: 1em;
+		animation-name: cubeRotation;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+	  }
+	  
+	  @keyframes cubeRotation {
+		0% {
+		  transform: rotateY(0deg) translateY(0px);
+		}
+		50% {
+		  transform: rotateY(180deg) translateY(-10px);
+		}
+		100% {
+		  transform: rotateY(360deg) translateY(0px);
+		}
+	  }
+	  
+	  .icon-circle {
+		z-index: 9;
+		left: 0;
+		bottom: 0;
+		animation-name: shakeEffect;
+		animation-duration: 6s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	  }
+	  
+	  @keyframes shakeEffect {
+		50% {
+		  left: 5%;
+		  bottom: 10%;
+		}
+	  }
+	  .icon-zigzag {
+		z-index: 9;
+		top: 1.5em;
+		left: -0.3em;
+		animation: zigzagAnimation 5s ease-in infinite;
+	  }
+	  
+	  @keyframes zigzagAnimation {
+		50% {
+		  left: 5%;
+		  top: 2%;
+		}
+	  }
+	  
+	  .icon-plus {
+		z-index: 9;
+		left: 50%;
+		top: -0.8rem;
+		animation-name: shakeEffect;
+		animation-duration: 5s infinite;
+		animation-timing-function: ease-in;
+	  }
+}
+
+@media only screen and (max-width: 480px) { 
+	.banner_content h3{
+		font-size: 18px;
+	}
+	.banner_content h1{
+		font-size: 24px;
+	}
+	.about-content h3 {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.blog-thumb h4{
+		font-size: 16px;
+	}
+	.contact-form-area h4{
+		font-size: 14px;
+	}
+	.footer-right-contact .single-contact{
+		margin: 10px 0px;
+		padding: 3px 50px;
+	}
+	.footer-right-contact .single-contact p{
+		font-size: 12px;
+	}	
+	.IamA{
+		text-transform: capitalize;
+		font-size: 15px;
+		text-decoration: none;
+		font-weight: 500;
+		font-style: inherit;
+
+	}
+	.hero-section-right {
+		position: relative;
+	  }
+	  
+	  .absolute {
+		position: absolute;
+	  }
+	  
+	  .user-image {
+		padding: 2rem;
+		margin-left: 20%;
+		filter: grayscale(0);
+		transition: all 3s;
+		/* animation: ScaleImage 5s linear infinite; */
+	  }
+	  .user-image img {
+		z-index: -9;
+		border-radius: 50% 50% 0 0;
+		/* border-top-right-radius: 30%; */
+		height: 300px;
+		width: 250px;
+		object-fit: cover;
+		border: 2px solid blue;
+		
+	  }
+	  
+	  @keyframes ScaleImage {
+		0% {
+		  filter: grayscale(0);
+		  transform: scale(1);
+		}
+	  
+		50% {
+		  transform: scale(1.2);
+		  filter: grayscale(1);
+		  box-shadow: 3px 3px 10px rgb(8, 118, 221);
+		}
+	  
+		100% {
+		  transform: scale(1);
+		  filter: grayscale(0);
+		}
+	  }
+	  
+	  .icon-dots {
+		z-index: 9;
+		bottom: -1rem;
+		right: 0;
+		animation-name: dotsAnimation;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+	  }
+	  @keyframes dotsAnimation {
+		0% {
+		  transform: translateY(0px);
+		}
+		50% {
+		  transform: translateY(-10px);
+		}
+		100% {
+		  transform: translateY(0px);
+		}
+	  }
+	  
+	  .icon-cube {
+		z-index: 9;
+		top: -0.8em;
+		right: 1em;
+		animation-name: cubeRotation;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+	  }
+	  
+	  @keyframes cubeRotation {
+		0% {
+		  transform: rotateY(0deg) translateY(0px);
+		}
+		50% {
+		  transform: rotateY(180deg) translateY(-10px);
+		}
+		100% {
+		  transform: rotateY(360deg) translateY(0px);
+		}
+	  }
+	  
+	  .icon-circle {
+		z-index: 9;
+		left: 0;
+		bottom: 0;
+		animation-name: shakeEffect;
+		animation-duration: 6s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	  }
+	  
+	  @keyframes shakeEffect {
+		50% {
+		  left: 5%;
+		  bottom: 10%;
+		}
+	  }
+	  .icon-zigzag {
+		z-index: 9;
+		top: 1.5em;
+		left: -0.3em;
+		animation: zigzagAnimation 5s ease-in infinite;
+	  }
+	  
+	  @keyframes zigzagAnimation {
+		50% {
+		  left: 5%;
+		  top: 2%;
+		}
+	  }
+	  
+	  .icon-plus {
+		z-index: 9;
+		left: 50%;
+		top: -0.8rem;
+		animation-name: shakeEffect;
+		animation-duration: 5s infinite;
+		animation-timing-function: ease-in;
+	  }
+}
